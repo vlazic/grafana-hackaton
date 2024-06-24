@@ -2,14 +2,18 @@ global:
   scrape_interval: 15s
 
 scrape_configs:
-  - job_name: "prometheus"
-    static_configs:
-      - targets: ["localhost:9090"]
-
-  - job_name: "node_exporter"
-    static_configs:
-      - targets: ["node_exporter:9100"]
-
-  # - job_name: "loopback4"
+  # - job_name: "prometheus"
   #   static_configs:
-  #     - targets: ["<your_loopback4_server>:<port>"]
+  #     - targets: ["localhost:9090"]
+
+  #  - job_name: 'node_exporter'
+  #    static_configs:
+  #      - targets: ['node_exporter:9100']
+
+  - job_name: "loopback4"
+    static_configs:
+      - targets: ["192.168.15.37:9464"]
+
+  # - job_name: "jaeger"
+  #   static_configs:
+  #     - targets: ["jaeger:16686"]
