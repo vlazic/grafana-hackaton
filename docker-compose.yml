@@ -42,6 +42,7 @@ services:
     container_name: jaeger
     image: jaegertracing/all-in-one:latest
     ports:
+      - "14268:14268" # The default port for the Zipkin receiver
       - "6831:6831/udp" # UDP port for receiving traces
       - "16686:16686" # Web UI
 
