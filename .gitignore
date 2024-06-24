@@ -4,3 +4,8 @@ prometheus/data/*
 # But don't ignore the .gitkeep file
 !prometheus/data/.gitkeep
 
+# Ignore all ini files in the grafana folder
+grafana/*.ini
+
+# Add any example files for grafana but not ini files
+!grafana/*.example

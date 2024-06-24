@@ -1,0 +1,12 @@
+[smtp]
+enabled = true
+host = smtp.de.opalstack.com:587
+user = mail_fs_rs
+password = CHANGE_ME
+cert_file =
+key_file =
+skip_verify = true
+from_address = mail@fs.rs
+from_name = Grafana Alert
+ehlo_identity =
+startTLS_policy =

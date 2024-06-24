@@ -17,6 +17,7 @@ services:
     image: grafana/grafana:latest
     volumes:
       - grafana-storage:/var/lib/grafana
+      - ./grafana/grafana.ini:/etc/grafana/grafana.ini
     ports:
       - "9630:3000"
     environment:
