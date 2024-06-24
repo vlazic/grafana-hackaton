@@ -1,0 +1,6 @@
+# Ignore all files in the prometheus/data folder
+prometheus/data/*
+
+# But don't ignore the .gitkeep file
+!prometheus/data/.gitkeep
+
