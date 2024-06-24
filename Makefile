@@ -26,9 +26,6 @@ restart:
 clean:
 	docker compose -f $(COMPOSE_FILE) down --rmi all -v --remove-orphans
 
-# Install dependencies (optional, if needed)
-install-dependencies:
-	npm install
 
 # Display help
 help:
